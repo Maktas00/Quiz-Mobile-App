@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.cyan,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: Anasayfa(),
@@ -31,16 +31,16 @@ class _AnasayfaState extends State<Anasayfa> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Anasayfa"),
+        title: Text("Ana Ekran"),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
-            Text("QUİZE HOŞGELDİNİZ",style: TextStyle(fontSize: 30),),
+            Text("QUİZE HOŞGELDİNİZ BAŞLAMAK İÇİN START BUTONUNA TIKLAYIN.",style: TextStyle(fontSize: 28),textAlign: TextAlign.center,),
             SizedBox(width: 250,height: 50,
               child: ElevatedButton(
-                child: Text("BAŞLA"),
+                child: Text("START"),
                 onPressed: (){
                   Navigator.push(context, MaterialPageRoute(builder: (context) => QuizEkrani()));
                 },
