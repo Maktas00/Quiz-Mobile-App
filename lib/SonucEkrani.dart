@@ -27,7 +27,7 @@ class _SonucEkraniState extends State<SonucEkrani> {
             SizedBox(
               height: 50,width: 250,
               child: ElevatedButton(
-                child: Text("TEKRAR DENE"),
+                child: Text("Tekrar Deneyin"),
                 onPressed: (){
                   Navigator.pop(context);
 
